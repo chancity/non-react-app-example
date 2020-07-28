@@ -24,10 +24,8 @@ const P = styled.p`
     font-size: 32px;
 `
 
-export default ({text, color, backgroundColor}) => {
-    return (
-        <Container backgroundColor={backgroundColor}>
-            <P fontColor={color}>{text}</P>
-        </Container>
-    )
-};
+export default ({text, color, backgroundColor}) => (
+    <Container backgroundColor={backgroundColor}>
+        <P fontColor={color}>{text}</P>
+    </Container>
+);
