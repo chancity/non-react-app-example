@@ -1,11 +1,14 @@
-import component from "./component";
+import {
+    Example
+} from "./components";
+
 import render from "./render";
 
 
 window.NotReactApp = {
     render,
     components: {
-        example: component
+       Example
     }
 }
 

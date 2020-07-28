@@ -3,11 +3,16 @@
     <script src="non-react-example.js"></script>
 </head>
 <body>
-<div id="renderNode"></div>
+<div>
+    <div id="example1"></div>
+    <div id="example2"></div>
+</div>
 <script>
     const render = window.NotReactApp.render;
-    const component = window.NotReactApp.components.example;
-    render('renderNode', component, {text: "hello world"})
+    const Example = window.NotReactApp.components.Example;
+
+    render('example1', Example, {text: "example1", color: 'white', backgroundColor: 'black'})
+    render('example2', Example, {text: "example2", color: 'black', backgroundColor: 'grey'})
 </script>
 </body>
 
