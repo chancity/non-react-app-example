@@ -5,7 +5,9 @@
 <body>
 <div id="renderNode"></div>
 <script>
-    window.NonReactApp.renderComponent('renderNode', window.NonReactApp.blackComponent, {text: "hello world"})
+    const render = window.NotReactApp.render;
+    const component = window.NotReactApp.components.example;
+    render('renderNode', component, {text: "hello world"})
 </script>
 </body>
 

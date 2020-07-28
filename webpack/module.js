@@ -17,7 +17,7 @@ module.exports = (config) => ({
                         "@babel/plugin-proposal-throw-expressions",
                         "@babel/plugin-transform-spread",
                         "@babel/plugin-transform-async-to-generator",
-                        ["@babel/plugin-transform-react-jsx", {"pragma":"h"}],
+                        ["@babel/plugin-transform-react-jsx"],
                         ["babel-plugin-styled-components", {
                             "pure": true
                         }]
