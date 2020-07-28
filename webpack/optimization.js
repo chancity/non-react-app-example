@@ -7,9 +7,6 @@ module.exports = (config) => ({
             cache: true,
             parallel: true,
             uglifyOptions: {
-                compress: {
-                   drop_console: true
-                },
                 mangle: true,
                 output: {comments: false},
             },

@@ -6,8 +6,9 @@
   "keywords": [],
   "author": "",
   "scripts": {
-    "build": "webpack -p",
-    "dev": "webpack -d",
+    "build-prod": "webpack -p",
+    "build-dev": "webpack -d",
+    "start": "webpack-dev-server --open",
     "serve-http": "serve build"
   },
   "dependencies": {
