@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: ${p => p.backgroundColor};;
   width: 100%;
@@ -14,17 +15,19 @@ const Container = styled.div`
 
 `;
 
-const H1 = styled.h1`
-    color: ${p => p.color};
+const P = styled.p`
+    height: max-content;
+    color: ${p => p.fontColor};
     text-transform: uppercase;
     font-family: "Arial Black", Gadget, sans-serif;
     margin: 0;
+    font-size: 32px;
 `
 
 export default ({text, color, backgroundColor}) => {
     return (
         <Container backgroundColor={backgroundColor}>
-            <H1 color={color}>{text}</H1>
+            <P fontColor={color}>{text}</P>
         </Container>
     )
 };
