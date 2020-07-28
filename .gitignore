@@ -1,0 +1,14 @@
+.DS_Store
+.vscode
+.idea
+*.iml
+*.code-workspace
+.changelog
+.eslintcache
+.env
+
+node_modules
+lib
+build
+yarn-error.log
+
